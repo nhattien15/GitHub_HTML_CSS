@@ -1,0 +1,279 @@
+<html>
+
+<body>
+
+
+    <form action="http://example/subscribe.php" method="POST">
+        <p>
+            User Name:
+            <input action="http://www.example/subscribe.php" name="username" type="text" maxlength="15" size="30" />
+        </p>
+        <p>
+            Password:
+            <input action="https://www.example/subscribe.php" name="password" type="password" maxlength="30"
+                size="60" />
+        </p>
+        <input type="submit" value="Login" />
+    </form>
+
+    <!--TextArea Form(Multi-line Form)-->
+    <form action="http://example/subscribe.php" method="GET">
+        <p>Type a comment</p>
+        <textarea name="comments" cols="20" rows="10">Enter your comment</textarea>
+        <input type="submit" value="Sent" />
+    </form>
+
+    <!--Radio Form-->
+    <form action="http://www.example/subscribe.php" method="GET">
+        <p>Choose a below option: </p>
+        <p>
+            <input type="radio" name="Choose TYPE OF MUSIC" value="Rock" /> Rock
+            <input type="radio" name="Choose TYPE OF MUSIC" value="POP" />POP
+            <input type="radio" name="Choose TYPE OF MUSIC" value="Classic" checked="checked" /> Classic
+        </p>
+        <input type="submit" value="Sent"></a>
+    </form>
+
+    <!--Checkbox Form-->
+    <form action="http://example/subscribe.php" method="GET">
+        <p><input type="checkbox" name="user investigating" value="You are student" /> You are Student </p>
+        <p><input type="checkbox" name="user investigating" value="Your are over 18 years old"> You are over 18 years
+            old </p>
+        <p><input type="checkbox" name="user investigating" value="Your major is Hotel Execution"> Your major is Hotel
+            Execution </p>
+        <p><input type="checkbox" name="user investigating" value="Your major is Software Technology"> Your major is
+            Software Technology</p>
+        <p><input type="checkbox" name="user investigating" value="You were marriage"> You were marriage</p>
+
+        <input type="submit" value="Sent" />
+        <!--Sent content of form to server. Value of "action" attibute is URL of server-->
+    </form>
+    <!--Drop down list box Form-->
+
+    <form action="http://example/subscribe.php" method="GET">
+        <select name="Sex Option">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+        <input type="submit" value="Sent" />
+    </form>
+
+
+    <!--Muti-seclection Drop down list box Form-->
+
+    <form action="http://example/subscribe.php" method="GET">
+
+        <p>
+            You can select more than one option by the way to Ctrl+Click or to hold then pull to choose
+        </p>
+        <select name="Music Instrument option" multiple="mutible" size="5">
+            <option value="Guitar"> Guitar </option>
+            <option value="Piano"> Piano </option>
+            <option value="Drum"> Drum </option>
+            <option value="Keyboard"> Keyboard </option>
+            <option value="Bass"> Bass </option>
+        </select>
+    </form>
+
+    <!--File Input Box Form-->
+
+    <form action="http://example/subscribe.php" method="POST">
+        <input type="file" name="Input File Vertify" />
+        <input type="submit" value="Upload" />
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!--Submit Type of Input Form-->
+    <form action="http://example/subscribe.php" method="POST">
+        <input type="file" name="File Image" />
+        <input type="image" src="/image/Satou San.png" height="15" width="30" />
+
+    </form>
+
+    <form action=http://example/subscribe.php method="GET">
+
+        <button>
+
+            <img src="/desktop_searchbox_sprites302_hr.png" height="10" width="10" /> Add
+
+
+        </button>
+        <input type="hidden" name="bookmark" value="lyrics" />
+    </form>
+
+    <a href="http://ajin.net"><img src="/image/nagaiKei.png" height="30" width="30" alt="NagaiKei"></a>
+    <p>
+        <a href="http://ajin.net"><img src="/logo_search.png" title="Search"></a>
+    </p>
+
+
+
+    <!--Hide form-->
+    <form action="http://example/subscribe.php" method="GET">
+        <button>
+            <img src="/logo_search.png" /> search
+
+        </button>
+        <input type="hidden" />
+    </form>
+    <h1>
+        No Label
+    </h1>
+    <form action="http://example/subscribe" method="GET">
+
+        Gender:
+        <p>
+            <input type="radio" name="Gender">
+
+            Male
+
+            <input type="radio" name="Gender" />
+
+            Female
+            </label>
+            <input type="radio" name="Gender" />
+            Other
+            </label>
+
+        </p>
+        <!--Label Elements is used for disable people. Should use for select Form Control-->
+        <h1>Label</h1>
+        <h4>Label way 1</h4>
+        <form action="http://example/subscribe" method="GET">
+
+            Gender:
+            <p>
+                <input type="radio" id="Male" name="Gender">
+                <label for="Male">
+                    Male
+                </label>
+                <input type="radio" id="Female" name="Gender" />
+                <label for="Female">
+                    Female
+                </label>
+                <input type="radio" id="Other" name="Gender" />
+                <label for="Other">
+                    Other
+                </label>
+
+            </p>
+
+        </form>
+        <h4>Label way 2</h4>
+        <form action="http://example/subscribe.php" method="GET">
+
+            Gender: <br />
+            <label>
+                <input type="radio" name="Gender" /> Male
+            </label>
+            <label> <input type="radio" name="Gender" /> Female </label>
+            <label> <input type="radio" name="Gender" /> Other </label>
+
+        </form>
+
+        <h1>Group related forms by fieldset element</h1>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label> Email: <br />
+                <input type="email" name="useremail" /></label>
+            <label><br />Telephone: <br />
+                <input type="tel" name="usermobile" /></label>
+        </fieldset>
+
+        <h1>Validation Form</h1>
+        <form action="http://example/subscribe.php" method="POST">
+            <label>
+                Username:
+                <input type="text" name="username" required="required" />
+            </label>
+            <p>
+                <label>
+                    Password:
+                    <input type="password" name="userpassword" required="required" />
+                </label>
+            </p>
+
+            <input type="submit" accesskey="Enter" name="Submit" value="Login" />
+
+            <h1>Date Input</h1>
+        </form>
+        <form action="http://example/subscibe.php" method="POST">
+            <label for="Date Depart">
+                Date Depart <br>
+                <input type="date" name="user_date_input">
+            </label>
+            <input type="submit" value="submit" />
+
+        </form>
+        <h1>Search Form</h1>
+        <form action="http://example/subscribe.php" method="GET">
+
+            <input type="search" name="search" placeholder="Find" />
+            <input type="submit" name="submit search" value="Search" accesskey="Enter" />
+        </form>
+
+        <h1>Make a complete mixed Form</h1>
+        <fieldset>
+            <legend>
+                Your Details
+            </legend>
+            <form action="http://example/subscibe.php" method="POST">
+                <label> Name: <input type="text" maxlength="100" name="Username" /> </label> <br />
+                <label>Email: <input type="email" name="usermail" required="required" /> <br /> </label>
+
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Review</legend>
+<form action="http://example/subscibe.php" method="GET">
+    How did you hear about us? 
+    <select>
+        <option value="Google" checked="checked" name="User_review">Google</option>
+        <option value="CocCoc" name="User_review">Coc Coc</option>
+        <option value="Internet Explorer" name="User_review">Internet Explorer</option>
+        <option value="Firefox" name="User_review">Firefox</option>
+        <option value="Opera" name="User_review">Opera</option>
+    </select>
+    
+</form>
+<form action="http://example/subscibe.php" method="GET">
+Would you visit again?
+<br/>
+<label><input type="radio" name="user_option" /> Yes </label>
+<label><input type="radio" name="user_option" /> No</label>
+<label><input type="radio" name="user_option" /> Maybe</label>
+<br/>
+<label>
+Comment:<br/>
+<textarea name="user_comment" cols="100" rows="4">Type</textarea>
+</label>
+<p>
+    <input type="checkbox" name="checkbox"> Sign me up for email updates
+    <br>
+    <input type="submit" name="submit" value="Submit review"> 
+</input>
+</p>
+</form>
+
+        </fieldset>
+
+
+    <h1>Iframe</h1>
+    <p>
+        <iframe src="http://ajin.net" height="500" width="1000" scrolling="yes" ></iframe>
+    </p>
+    <p>
+        <h1>Iframe</h1>
+    <p>
+        <iframe src="http://youtube.com" 
+        height="500" width="1000" ></iframe>
+    </p>
+    </p>
+</body>
+
+</html>
